@@ -252,6 +252,52 @@ body {
     z-index: 2000;
 }
 
+/* Scroll to Top button styles */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    padding: 1rem 1.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Show button when user scrolls down */
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hover effect */
+.scroll-to-top:hover {
+    background-color: #7c6229;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .scroll-to-top {
+        padding: 0.7rem 1rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-to-top {
+        padding: 0.5rem 0.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .header {

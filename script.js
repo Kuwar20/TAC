@@ -37,3 +37,26 @@ exploreButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Listen for scroll events
+    window.onscroll = function() {
+        // Show or hide the button based on scroll position
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    };
+
+    // Smooth scroll to top when button is clicked
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Check if the scroll event is firing
+    console.log('Scroll event listener is active');
