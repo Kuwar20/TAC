@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.A.C - Fall Collection 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">T.A.C</div>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-link">Home</a>
+            <a href="#" class="header__nav-link">Shop</a>
+            <a href="#" class="header__nav-link">Contact</a>
+        </nav>
+        <button class="header__cta">Shop Now</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Introducing Our Fall Collection</h1>
+                <p class="hero__subtitle">Embrace the season with timeless elegance and comfort</p>
+                <button class="hero__cta" id="explore-button">Shop Now</button>
+            </div>
+        </section>
+
+        <section class="product-grid" id="product-section">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Autumn Sweater" class="product__image">
+                <div class="product__info">
+                    <h2 class="product__name">Cozy Knit Sweater</h2>
+                    <p class="product__price">$79.99</p>
+                    <button class="product__add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1631555947367-59c4e8bfc0cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Leather Boots" class="product__image">
+                <div class="product__info">
+                    <h2 class="product__name">Classic Leather Boots</h2>
+                    <p class="product__price">$129.99</p>
+                    <button class="product__add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1516648064-ee10acfa64db?q=80&w=2063&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Wool Coat" class="product__image">
+                <div class="product__info">
+                    <h2 class="product__name">Tailored Wool Coat</h2>
+                    <p class="product__price">$199.99</p>
+                    <button class="product__add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Silk Scarf" class="product__image">
+                <div class="product__info">
+                    <h2 class="product__name">Elegant Silk Scarf</h2>
+                    <p class="product__price">$49.99</p>
+                    <button class="product__add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="https://www.facebook.com/" target='_blank' rel="noopener noreferrer" class="footer__social-icon footer__social-icon--facebook"></a>
+            <a href="https://www.instagram.com/" target='_blank' rel="noopener noreferrer" class="footer__social-icon footer__social-icon--instagram"></a>
+            <a href="https://twitter.com/home" target='_blank' rel="noopener noreferrer" class="footer__social-icon footer__social-icon--twitter"></a>
+        </div>
+        <form class="footer__newsletter">
+            <input type="email" placeholder="Enter your email" class="footer__newsletter-input">
+            <button type="submit" class="footer__newsletter-button">Subscribe</button>
+        </form>
+    </footer>
+
+    <div class="notification" id="notification">Item added to cart!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
